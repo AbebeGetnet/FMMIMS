@@ -1,0 +1,6 @@
+@FMMIS_HostAddress = http://localhost:5209
+
+GET {{FMMIS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
