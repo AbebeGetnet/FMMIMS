@@ -63,7 +63,7 @@ namespace FMMIS.Controllers
             var result = await _userManager.CreateAsync(userToAdd, model.Password);
             if (!result.Succeeded) return BadRequest(result.Errors);
             {
-                return Ok("User has been registered successfuly!");
+                return Ok(new JsonResult(new { title = "Account created", message = "Your account has been created, you can login." }));
             }
         }
 

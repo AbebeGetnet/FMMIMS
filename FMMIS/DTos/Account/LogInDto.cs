@@ -4,9 +4,9 @@ namespace FMMIS.DTos.Account
 {
     public class LogInDto
     {
-        [Required]
+        [Required(ErrorMessage ="User name is required")]
         public string UserName { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Password is required")]
         public string Password { get; set; }
     }
 }
